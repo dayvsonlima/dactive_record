@@ -4,6 +4,7 @@ Description goes here.
 
 ## Code status
 [![Build Status](https://travis-ci.org/dayvsonlima/dactive_record.svg?branch#master)](https://travis-ci.org/dayvsonlima/dactive_record)
+[![Code Climate](https://codeclimate.com/github/dayvsonlima/dactive_record/badges/gpa.svg)](https://codeclimate.com/github/dayvsonlima/dactive_record)
 
 ## Contributing to dactive_record
 
