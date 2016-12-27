@@ -1,6 +1,9 @@
 require 'simplecov'
 SimpleCov.start
 
+require 'coveralls'
+Coveralls.wear!
+
 Dir[File.expand_path(File.dirname(__FILE__) + "../../lib/**/*.rb")].each(&method(:require))
 Dir[File.expand_path(File.dirname(__FILE__) + "/fixtures/**/*.rb")].each(&method(:require))
 
