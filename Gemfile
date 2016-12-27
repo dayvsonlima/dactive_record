@@ -6,6 +6,7 @@ source "https://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 gem 'activemodel'
+gem 'coveralls', require: false
 
 group :development, :test do
   gem "shoulda", ">= 0"
