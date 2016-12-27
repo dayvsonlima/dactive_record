@@ -5,6 +5,7 @@ Description goes here.
 ## Code status
 [![Build Status](https://travis-ci.org/dayvsonlima/dactive_record.svg?branch#master)](https://travis-ci.org/dayvsonlima/dactive_record)
 [![Code Climate](https://codeclimate.com/github/dayvsonlima/dactive_record/badges/gpa.svg)](https://codeclimate.com/github/dayvsonlima/dactive_record)
+[![Coverage Status](https://coveralls.io/repos/github/dayvsonlima/dactive_record/badge.svg?branch=master)](https://coveralls.io/github/dayvsonlima/dactive_record?branch=master)
 
 ## Contributing to dactive_record
 
