@@ -6,6 +6,7 @@ source "https://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 gem 'activemodel'
+gem 'aws-sdk', '~> 2'
 gem 'coveralls', require: false
 
 group :development, :test do
