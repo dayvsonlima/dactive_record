@@ -47,4 +47,17 @@ describe DactiveRecord::Base, type: :model do
       it { expect(user.save).to be_truthy }
     end
   end
+
+  describe '.where' do
+    let(:relation_instance) { User.where(id: 'some_id') }
+
+    subject(:class_type) { DactiveRecord::Relation::Relation }
+
+    subject(:hash_query) { {id: 'some_id'} }
+
+    it { expect(relation_instance.class).to eq(class_type) }
+
+    it { expect(relation_instance.hash_query).to eq(hash_query) }
+    it { expect(relation_instance.relationable).to eq(User) }
+  end
 end

@@ -7,6 +7,14 @@ module DactiveRecord
 
     attr_accessor :id
 
+    def self.find(id)
+      Relation::Relation.new(self, {id: id})
+    end
+
+    def self.where(args)
+      Relation::Relation.new(self, args)
+    end
+
     def save
       return true if valid?
     end
@@ -15,8 +23,8 @@ module DactiveRecord
       @@table_name ||= "#{self.name.underscore}"
     end
 
-    def self.table_name=(t_name)
-      @@table_name = t_name
+    def self.table_name=(table_name)
+      @@table_name = table_name
     end
   end
 end
