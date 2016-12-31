@@ -6,10 +6,17 @@ module DactiveRecord
     include ActiveModel::Validations
 
     attr_accessor :id
-    attr_accessor :table_name
 
     def save
       return true if valid?
+    end
+
+    def self.table_name
+      @@table_name ||= "#{self.name.underscore}"
+    end
+
+    def self.table_name=(t_name)
+      @@table_name = t_name
     end
   end
 end
